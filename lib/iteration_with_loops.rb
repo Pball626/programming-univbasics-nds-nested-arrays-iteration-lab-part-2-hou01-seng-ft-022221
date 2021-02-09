@@ -11,7 +11,7 @@ row_index = 0
     
     while element_index < src[row_index].length do
       row_index = 0 
-      if src[row_index][element_index] == src[row_index].min 
+      if src[row_index][element_index] == src[row_index].min binding.pry
         daily_lows = src[row_index][element_index]
       end
       element_index += 1 
@@ -20,5 +20,5 @@ row_index = 0
     row_index += 1 
   end
   weekly_lows_array
-  binding.pry
+  
 end
